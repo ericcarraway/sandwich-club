@@ -12,6 +12,7 @@ Once per week, `sandwich-club` participants travel as a group to HEB.  We purcha
 | 5 | $15 | $75 |
 
 ## Shopping List
+[shopping-list.md](shopping-list.md)
 
 ## HEB Locations
 [img/heb-locations.png](img/heb-locations.png)
