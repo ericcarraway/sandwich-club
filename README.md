@@ -14,6 +14,7 @@ Once per week, `sandwich-club` participants travel as a group to HEB.  We purcha
 ## Shopping List
 
 ## HEB Locations
+[img/heb-locations.png](img/heb-locations.png)
 
 ## Storing Food
 * Community / fueling station refrigerators
