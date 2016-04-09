@@ -1,7 +1,6 @@
-# Ignore docs files
-_gh_pages
-_site
+.jekyll-metadata
 .ruby-version
+.sass-cache
 
 # Numerous always-ignore extensions
 *.diff
@@ -29,6 +28,9 @@ nbproject
 *.sublime-workspace
 .idea
 
+.coffeehintrc
+.jshintrc
+
 # Komodo
 *.komodoproject
 .komodotools
@@ -38,5 +40,10 @@ validation-status.json
 validation-report.json
 
 # Folders to ignore
+_drafts
+_gh_pages
+_site
 node_modules
-bower_components
+
+# #TODO: ignore almost everything
+# http://sundip.me/ignore-within-gitignore/
