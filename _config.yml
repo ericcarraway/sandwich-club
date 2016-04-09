@@ -1,16 +1,24 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
+# permalink:           pretty
+
+# Since v3.0, permalinks for pages in subfolders must be relative to the site source directory,
+# not the parent directory. Check http://jekyllrb.com/docs/upgrading/ for more info.
+# relative_permalinks: true
 
 # Setup
 title:               Sandwich Club
 tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/_" target="_blank">@_</a>.'
+description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/CarrawayEric" target="_blank">@CarrawayEric</a>.'
 url:                 http://sandwichclub.io
-baseurl:             ''
+# baseurl:             ''
+
+# TODO: fix pagination
+# You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem.
+# Ensure you have `gems: [jekyll-paginate]` in your configuration file.
 paginate:            5
+
 
 # About/contact
 author:
@@ -20,3 +28,80 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# https://github.com/ericcarraway/ericcarraway.github.io/blob/master/_config.yml
+# TODO: Friday 2016-04-08  |  review the Jekyll documentation and clean this up
+#
+
+# Where things are
+source:      .
+destination: ./_site
+plugins_dir:     ./_plugins
+layouts_dir:     ./_layouts
+data_dir: ./_data
+# collections: null
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      true
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:      [jekyll-paginate]
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
+# Outputting
+permalink:     /:title.html
+# paginate: 10
+# paginate_path: /page:num
+timezone:      null
+
+quiet:    false
+defaults: []
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
+
+include: ['_pages']
