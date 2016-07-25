@@ -1,6 +1,8 @@
 # sandwich-club
 _Documentation for not spending $200 per month on lunch_
 
+![2016-07-25-arc6789](./img/2016-07-25-arc6789.jpg)
+
 ## Overview
 Once per week, `sandwich-club` participants travel as a group to HEB.  We purchase groceries for a week's worth of lunches.  At the checkout, we divide the cost by the number of participants.  We aim to spend less than $15 per person.
 
