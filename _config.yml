@@ -17,7 +17,7 @@ url:                 http://sandwichclub.io
 # TODO: fix pagination
 # You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem.
 # Ensure you have `gems: [jekyll-paginate]` in your configuration file.
-paginate:            5
+# paginate:            5
 
 
 # About/contact
@@ -58,7 +58,7 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      [jekyll-paginate]
+# gems:      [jekyll-paginate]
 
 # Conversion
 markdown:    kramdown

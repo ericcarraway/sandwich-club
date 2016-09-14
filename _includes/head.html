@@ -2,24 +2,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
     <meta name="description"
           content="Sandwich Club">
-    <meta name="author" content="Eric Carraway">
+    <meta name="author" content="Sandwich Club">
     <link rel="icon" href="../public/favicon.ico">
 
-    <!-- <title>Sandwich Club</title> -->
     <title>
-      {% if page.title == "Home" %}
-        {{ site.title }} &middot; {{ site.tagline }}
+      {% if page.title %}
+        Sandwich Club &middot; {{ page.title }}
       {% else %}
-        {{ page.title }} &middot; {{ site.title }}
+        Sandwich Club &middot; Synergistic Lunch Solutions
       {% endif %}
     </title>
 
-  <!-- CSS -->
     <link rel="stylesheet"
           href="../public/css/poole.css">
     <link rel="stylesheet"
